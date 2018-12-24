@@ -17,6 +17,10 @@ function mouseClicked(){
   let ball= new Ball(mouseX,mouseY,40,40);
   balls.push(ball);
 }
+function add(){
+  let ball= new Ball(random(20,width-20),random(20,height-20),40,40);
+  balls.push(ball);
+}
 class Ball {
   constructor(posX, posY, pwidth,pheight){
     this.x = posX;
